@@ -1,0 +1,155 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+root,
+#__next {
+  isolation: isolate;
+}
+
+/*-----------------------My css begins ----------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --wood-shade: rgb(245, 228, 203);
+  --transparent-shade: rgb(0, 0, 0, 0.7);
+}
+html {
+  height: 100%;
+
+  body {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 5% 1fr 5%;
+    height: 100%;
+    background: url("./assets/images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      grid-row: 1/2;
+      background: var(--transparent-shade);
+      align-items: center;
+
+      h1 {
+        margin-left: 1rem;
+        text-align: center;
+        font-size: 1.5rem;
+        color: var(--wood-shade);
+      }
+
+      nav {
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+
+        > button {
+          --transparent-bg: rgb(256, 256, 256, 0);
+          margin: 0 20px;
+          border: none;
+          background-color: var(--transparent-bg);
+          font-weight: 800;
+          font-size: 1.5rem;
+          color: var(--wood-shade);
+        }
+      }
+    }
+
+    main {
+      --faint-dark-bg: rgb(0, 0, 0, 0.3);
+      grid-rows: 2/3;
+      color: red;
+      font-size: 1.5rem;
+      font-weight: 800;
+      background-color: var(--faint-dark-bg);
+      display: flex;
+      align-items: center;
+
+      > p {
+        text-align: center;
+        font-style: italic;
+        text-align: center;
+        font-size: 3rem;
+        color: var(--wood-shade);
+        font-weight: 800;
+      }
+    }
+    footer {
+      background-color: var(--transparent-shade);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      > p {
+        /*color: var(--wood-shade);*/
+        color: rgba(245, 245, 220, 0.85);
+        text-align: center;
+      }
+    }
+  }
+}
