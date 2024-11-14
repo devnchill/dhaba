@@ -47,11 +47,10 @@ body {
 
       .selected_button {
         background-color: white;
-        color: white;
+        color: black;
       }
-
-      button::selection {
-        background-color: black;
+      button:focus {
+        background-color: red;
       }
     }
   }

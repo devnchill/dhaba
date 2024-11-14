@@ -6,15 +6,13 @@ function createCustomElement(tag, id, textcontent) {
 }
 
 function changeBG() {
-  const target = document.getElementById("navbar");
-  console.log(target);
-  target.forEach((element) => {
-    element.addEventListener("click", () => {
-      target.addEventListener("click", (e) => {
-        e.classlist.remove("selected_button");
-      });
-      element.classlist.add("selected_button");
+  const buttons = document.querySelectorAll("button");
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      buttons.forEach((btn) => btn.classList.remove("selected_button"));
+      button.classList.add("selected_button");
     });
   });
 }
-export { changeBG,createCustomElement };
+
+export { changeBG, createCustomElement };
