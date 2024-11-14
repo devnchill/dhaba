@@ -4,50 +4,49 @@
 }
 :root {
   --wood-shade: rgb(245, 228, 203);
-  --transparent-shade: rgb(0, 0, 0, 0.7);
+  --transparent-shade: rgb(0, 0, 0, 0.8);
 }
-html,body {
+html,
+body {
   height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 5% 1fr;
+  height: 100%;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    background: var(--transparent-shade);
+    align-items: center;
+
+    h1 {
+      margin-left: 1rem;
+      text-align: center;
+      font-size: 1.5rem;
+      color: var(--wood-shade);
     }
 
-  body {
-    display: grid;
-    grid-template-rows: 5% 1fr;
-    height: 100%;
-    height: 100%;
-    background: url("./assets/images/bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    header {
+    nav {
+      height: 100%;
       display: flex;
-      justify-content: space-between;
-      grid-row: 1/2;
-      background: var(--transparent-shade);
-      align-items: center;
+      justify-content: space-evenly;
 
-      h1 {
-        margin-left: 1rem;
-        text-align: center;
+      > button {
+        padding: 8px;
+        --transparent-bg: rgb(256, 256, 256, 0);
+        margin: 0 20px;
+        border: none;
+        background-color: var(--transparent-bg);
+        font-weight: 800;
         font-size: 1.5rem;
         color: var(--wood-shade);
       }
-
-      nav {
-        height: 100%;
-        display: flex;
-        justify-content: space-evenly;
-
-        > button {
-          --transparent-bg: rgb(256, 256, 256, 0);
-          margin: 0 20px;
-          border: none;
-          background-color: var(--transparent-bg);
-          font-weight: 800;
-          font-size: 1.5rem;
-          color: var(--wood-shade);
-        }
-      }
+      /*button::selection {*/
+      /*  background-color: black;*/
+      /*}*/
     }
   }
+}
