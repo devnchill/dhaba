@@ -119,37 +119,5 @@ html {
         }
       }
     }
-
-    main {
-      --faint-dark-bg: rgb(0, 0, 0, 0.3);
-      grid-rows: 2/3;
-      color: red;
-      font-size: 1.5rem;
-      font-weight: 800;
-      background-color: var(--faint-dark-bg);
-      display: flex;
-      align-items: center;
-
-      > p {
-        text-align: center;
-        font-style: italic;
-        text-align: center;
-        font-size: 3rem;
-        color: var(--wood-shade);
-        font-weight: 800;
-      }
-    }
-    footer {
-      background-color: var(--transparent-shade);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      > p {
-        /*color: var(--wood-shade);*/
-        color: rgba(245, 245, 220, 0.85);
-        text-align: center;
-      }
-    }
   }
 }
