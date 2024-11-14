@@ -1,6 +1,12 @@
+"use strict";
 import { renderHome } from "./home.js";
 import { renderAbout } from "./about.js";
 
+function loadTab(renderFunction) {
+  const content = document.getElementById("content");
+  content.innerHTML = "";
+  renderFunction();
+}
 window.addEventListener("DOMContentLoaded", renderHome);
 
 const HEADER = document.querySelector("header");
@@ -18,9 +24,3 @@ HEADER.addEventListener("click", (event) => {
       break;
   }
 });
-
-function loadTab(renderFunction) {
-  const content = document.getElementById("content");
-  content.innerHTML = "";
-  renderFunction();
-}

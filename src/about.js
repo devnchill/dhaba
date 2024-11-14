@@ -1,4 +1,5 @@
 import "./reset.css";
+import "./header.css"
 import "./aboutStyles.css";
 import { createElement } from "./helperFunction";
 
