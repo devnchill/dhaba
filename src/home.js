@@ -1,3 +1,5 @@
+import "./reset.css";
+import "./homeStyles.css";
 import { createElement } from "./helperFunction";
 
 export function renderHome() {

@@ -1,4 +1,5 @@
-function createElement(param) {
-  return document.createElement(`${param}`);
+function createElement(tag) {
+  return document.createElement(tag);
 }
+
 export { createElement };
