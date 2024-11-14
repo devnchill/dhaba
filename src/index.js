@@ -2,11 +2,13 @@
 import { renderHome } from "./home.js";
 import { renderAbout } from "./about.js";
 import { rendercontact } from "./contact.js";
+import { changeBG } from "./helperFunction.js";
 
 function loadTab(renderFunction) {
   const content = document.getElementById("content");
   content.innerHTML = "";
   renderFunction();
+  changeBG();
 }
 window.addEventListener("DOMContentLoaded", renderHome);
 
