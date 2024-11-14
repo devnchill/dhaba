@@ -1,6 +1,5 @@
 "use strict";
 import { renderHome } from "./home.js";
-import { renderAbout } from "./about.js";
 import { rendercontact } from "./contact.js";
 import { changeBG } from "./helperFunction.js";
 
@@ -10,7 +9,7 @@ function loadTab(renderFunction) {
   renderFunction();
   changeBG();
 }
-window.addEventListener("DOMContentLoaded", renderHome);
+window.addEventListener("DOMContentLoaded", loadTab(renderHome));
 
 const HEADER = document.querySelector("header");
 
@@ -20,9 +19,9 @@ HEADER.addEventListener("click", (event) => {
     case "homeBtn":
       loadTab(renderHome);
       break;
-    case "aboutBtn":
-      loadTab(renderAbout);
-      break;
+    //case "aboutBtn":
+    //  loadTab(renderAbout);
+    //  break;
     case "contactBtn":
       loadTab(rendercontact);
       break;

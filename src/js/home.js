@@ -1,6 +1,6 @@
-import "./reset.css";
-import "./header.css";
-import "./home.css";
+import "/src/css/reset.css";
+import "/src/css/header.css";
+import "/src/css/home.css";
 import { createCustomElement } from "./helperFunction";
 export function renderHome() {
   const content = document.getElementById("content");

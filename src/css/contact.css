@@ -6,7 +6,7 @@
   #contact_img {
     height: 100%;
     background-color: purple;
-    background: url(assets/images/contace.jpg);
+    background: url(/src/assets/images/contact.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,5 +31,6 @@
     background-color: var(--transparent-shade);
     color: var(--yello-cream-shade);
     text-align: center;
+    overflow: hidden;
   }
 }
