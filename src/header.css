@@ -49,9 +49,9 @@ body {
         background-color: white;
         color: black;
       }
-      button:focus {
-        background-color: red;
-      }
+      /*button:focus {*/
+      /*  background-color: red;*/
+      /*}*/
     }
   }
 }
