@@ -44,9 +44,15 @@ body {
         font-size: 1.5rem;
         color: var(--wood-shade);
       }
-      /*button::selection {*/
-      /*  background-color: black;*/
-      /*}*/
+
+      .selected_button {
+        background-color: white;
+        color: white;
+      }
+
+      button::selection {
+        background-color: black;
+      }
     }
   }
 }

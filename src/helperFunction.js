@@ -5,4 +5,16 @@ function createCustomElement(tag, id, textcontent) {
   return element;
 }
 
-export { createCustomElement };
+function changeBG() {
+  const target = document.getElementById("navbar");
+  console.log(target);
+  target.forEach((element) => {
+    element.addEventListener("click", () => {
+      target.addEventListener("click", (e) => {
+        e.classlist.remove("selected_button");
+      });
+      element.classlist.add("selected_button");
+    });
+  });
+}
+export { changeBG,createCustomElement };

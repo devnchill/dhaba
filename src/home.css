@@ -14,10 +14,10 @@
     -webkit-filter: blur(8px);
   }
   #home_parent {
+    --yello-cream-shade: #96a667;
     border-radius: 8px;
     display: flex;
     align-items: center;
-    --yello-cream-shade: #96a667;
     font-size: 2.5rem;
     border: 3px solid #f1f1f1;
     position: absolute;
