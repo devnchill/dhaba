@@ -33,4 +33,7 @@
     text-align: center;
     overflow: hidden;
   }
+  table {
+    padding-left: 15%;
+  }
 }
