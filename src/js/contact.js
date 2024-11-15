@@ -2,7 +2,7 @@ import "/src/css/reset.css";
 import "/src/css/header.css";
 import "/src/css/contact.css";
 import { createCustomElement } from "./helperFunction";
-export function rendercontact() {
+export function renderContact() {
   const content = document.getElementById("content");
 
   const imgDiv = createCustomElement("div", "contact_img", "");

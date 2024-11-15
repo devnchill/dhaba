@@ -45,12 +45,9 @@ body {
         color: var(--wood-shade);
       }
 
-      .selected_button {
-        background-color: white;
-        color: black;
-      }
       button:focus {
         background-color: white;
+        color:black;
       }
     }
   }
