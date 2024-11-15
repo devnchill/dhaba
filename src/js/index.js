@@ -1,5 +1,6 @@
 "use strict";
 import { renderHome } from "./home.js";
+import { renderMenu } from "./menu.js";
 import { rendercontact } from "./contact.js";
 
 function loadTab(renderFunction) {
@@ -17,8 +18,11 @@ HEADER.addEventListener("click", (event) => {
     case "homeBtn":
       loadTab(renderHome);
       break;
-    //case "aboutBtn":
-    //  loadTab(renderAbout);
+    case "menuBtn":
+      loadTab(renderMenu);
+      break;
+    //case "langBtn":
+    //  loadTab(renderLang);
     //  break;
     case "contactBtn":
       loadTab(rendercontact);
